@@ -1,0 +1,40 @@
+:root{
+    --main-color: rgb(29, 22, 22);
+    --secondary-dark: rgb(142, 22, 22);
+    --secondary-light: rgb(216, 64, 64);
+    --secondary-white: rgb(238, 238, 238);
+    --name-bracket-margin: 66px;
+}
+
+body{ 
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.window-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-box {
+
+    background-color: black;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bpm-text-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.bpm-text-container h1{
+    font-family: "Saira", "sans-serif";
+    padding: 5px;
+}
