@@ -7,6 +7,7 @@
 
     --font-color: black;
     --main-color2: #ebeaea;
+    --secondary-grey: rgb(150, 150, 150); 
 }
 
 body{ 
@@ -55,7 +56,7 @@ body{
 .slider {
     appearance: none;
     width: 300px;
-    background: var(--secondary-dark);
+    background: var(--secondary-grey);
     outline: none;
     border-radius: 40px;
 }
@@ -65,9 +66,8 @@ body{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: rgb(150, 150, 150);
-    outline:solid 3px;
-    outline-color: white;
+    background: var(--main-color2);
+    outline:solid 1.75px black;
     cursor: pointer;
 }
 
@@ -79,6 +79,7 @@ body{
     font-size: 1.5rem;
     border-radius: 50%;
     background-color: white;
+    cursor: pointer;
 }
 
 #start-stop-button {
@@ -88,4 +89,86 @@ body{
     font-weight: bold;
     border-radius: 50%;
     margin: 30px auto;
+    cursor:pointer;
 }
+
+.dots-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#dot1-outer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 20px;
+    display: flex;
+    align-items:center;
+}
+#dot1-inner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color2);
+    margin: 3px auto;
+
+}
+
+#dot2-outer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 20px;
+    display: flex;
+    align-items:center;
+}
+#dot2-inner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color2);
+    margin: 3px auto;
+
+}
+
+#dot3-outer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 20px;
+    display: flex;
+    align-items:center;
+}
+#dot3-inner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color2);
+    margin: 3px auto;
+
+}
+
+#dot4-outer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 20px;
+    display: flex;
+    align-items:center;
+}
+#dot4-inner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color2);
+    margin: 3px auto;
+
+}
+
+
