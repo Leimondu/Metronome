@@ -4,11 +4,15 @@
     --secondary-light: rgb(216, 64, 64);
     --secondary-white: rgb(238, 238, 238);
     --name-bracket-margin: 66px;
+
+    --font-color: black;
+    --main-color2: #ebeaea;
 }
 
 body{ 
-    background-color: var(--main-color);
-    color: white;
+    background-color: var(--main-color2);
+    color: black;
+    font-family: "Comfortaa", "sans-serif";
 
 }
 
@@ -20,12 +24,15 @@ body{
 
 .app-box {
 
-    background-color: black;
+    background-color: var(--main-color2);
     width: 500px;
+    margin: 40px 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
 }
 
 .bpm-text-container {
@@ -35,6 +42,50 @@ body{
 }
 
 .bpm-text-container h1{
-    font-family: "Saira", "sans-serif";
+    font-family: "Comfortaa", "sans-serif";
     padding: 5px;
+}
+
+.input-container {
+    align-items: center;
+    margin: 10px auto;
+    color: black;
+}
+
+.slider {
+    appearance: none;
+    width: 300px;
+    background: var(--secondary-dark);
+    outline: none;
+    border-radius: 40px;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(150, 150, 150);
+    outline:solid 3px;
+    outline-color: white;
+    cursor: pointer;
+}
+
+.bpm-shift-buttons {
+    width: 50px;
+    height: 50px;
+    font-family: "Saira", "sans-serif";
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#start-stop-button {
+    width: 100px;
+    height: 100px;
+    font-family: "Comfortaa", "sans-serif";
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 30px auto;
 }

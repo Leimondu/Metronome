@@ -8,23 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="window-container">
+        <h1>Minimal Metronome</h1>
         <div class="app-box">
             <div class="bpm-text-container">
                 <h1 class="bpm-text" id="rangeValue">90</h1>
-                <h1>BPM</h1>
+                <h1>bpm</h1>
             </div>
             <div class="input-container">
-                <button class="dec-bpm" onClick="decrementValue()">-</button>
+                <button class="bpm-shift-buttons" onClick="decrementValue()">-</button>
                 <input class="slider"
                         type="range" 
                         min="60" 
                         max="160" 
                         value="90"
                         oninput="rangeValue.innerText = this.value">
-                <button class="inc-bpm" onClick="incrementValue()" >+</button>
+                <button class="bpm-shift-buttons" onClick="incrementValue()" >+</button>
             </div>
             <button id="start-stop-button">play</button>
         </div>
