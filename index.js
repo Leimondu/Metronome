@@ -22,6 +22,7 @@ async function playaudio(){
             for (let i = 0; i < 3; i++){
                 await new Promise(resolve => setTimeout(resolve, delayCalc(slider.value)));
                 tock.play()   
+                if(state == false){break;}
             }  
             await new Promise(resolve => setTimeout(resolve, delayCalc(slider.value)));  
         }
