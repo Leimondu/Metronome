@@ -87,7 +87,13 @@ body{
     background-color: var(--secondary-grey);
 }
 
-#start-stop-button {
+.ss-button-container {
+    position:relative;
+}
+
+#play-button {
+    position:absolute;  
+    left: 0px;
     width: 100px;
     height: 100px;
     font-family: "Comfortaa", "sans-serif";
@@ -95,8 +101,26 @@ body{
     border-radius: 50%;
     margin: 30px auto;
     cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-#start-stop-button:hover {
+#play-button:hover {
+    background-color: var(--secondary-grey);
+}
+#stop-button{
+    width: 100px;
+    height: 100px;
+    font-family: "Comfortaa", "sans-serif";
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 30px auto;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#stop-button:hover {
     background-color: var(--secondary-grey);
 }
 

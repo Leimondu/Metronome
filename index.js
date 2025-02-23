@@ -4,7 +4,7 @@ const tock = new Audio('./assets/tick-octdown.wav');
 
 let slider = document.querySelector("input[type='range']");
 let bttn = document.getElementById('stop-button');
-let bttn2 = document.getElementById('start-stop-button');
+let bttn2 = document.getElementById('play-button');
 let state = false;
 let bpm = 130;
 
@@ -73,6 +73,7 @@ async function playaudio(){
     if(state == false) {
         state = true;
         console.log('state is true');
+        switchButton();
         
         while (state == true) {
             counter++;
@@ -113,9 +114,11 @@ async function playaudio(){
     else {
         state = false;
         console.log('state is false');
+        switchButton();
     }
     resetDots();
 }
+bttn.addEventListener('click', playaudio);
 //Event listener to start/stop the metronome
 bttn2.addEventListener('click', playaudio);
 //Increment bpm value
@@ -135,4 +138,13 @@ function decrementValue() {
     else {value--;}
     document.getElementById('rangeValue').innerText = value;
     slider.value = value;
+}
+
+function switchButton() {
+    if(state == true) {
+        document.getElementById('play-button').style.left = '-9999px';
+    }
+    else {
+        document.getElementById('play-button').style.left = '0px';
+    }
 }
