@@ -59,6 +59,7 @@ body{
     background: var(--secondary-grey);
     outline: none;
     border-radius: 40px;
+    cursor:pointer;
 }
 
 .slider::-webkit-slider-thumb {
@@ -82,6 +83,10 @@ body{
     cursor: pointer;
 }
 
+.bpm-shift-buttons:hover {
+    background-color: var(--secondary-grey);
+}
+
 #start-stop-button {
     width: 100px;
     height: 100px;
@@ -90,6 +95,9 @@ body{
     border-radius: 50%;
     margin: 30px auto;
     cursor:pointer;
+}
+#start-stop-button:hover {
+    background-color: var(--secondary-grey);
 }
 
 .dots-container {
